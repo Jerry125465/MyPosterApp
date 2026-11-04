@@ -120,47 +120,65 @@ public class PosterRepository {
         }
     }
 
+
+    /**
+     * Creates the five custom movie posters displayed on the Main Page.
+     * Each movie includes its image, title, rating, director, and description.
+     */
     private static List<Posters> createPosters() {
         List<Posters> posters = new ArrayList<>();
 
-        Posters the100 = new Posters();
-        the100.id = "vietnam";
-        the100.image = R.drawable.poster3;
-        the100.name = "Vietnam Movie";
-        the100.rating = 5f;
-        the100.createdBy = "Cuong Ngo";
-        the100.story = "This is an Vietnam Movie with a young lady";
-        posters.add(the100);
+        // Rango movie information
+        Posters rango = new Posters();
+        rango.id = "rango";
+        rango.image = R.drawable.poster_rango;
+        rango.name = "Rango";
+        rango.rating = 5f;
+        rango.createdBy = "Gore Verbinski";
+        rango.story = "A pet chameleon becomes the unlikely sheriff of a Wild West town.";
+        posters.add(rango);
 
-        Posters chineseMovie = new Posters();
-        chineseMovie.id = "chinese";
-        chineseMovie.image = R.drawable.poster4;
-        chineseMovie.name = "Chinese Movie";
-        chineseMovie.rating = 4f;
-        chineseMovie.createdBy = "Zhang San";
-        chineseMovie.story = "This is an Chinese Movie with a young lady.";
-        posters.add(chineseMovie);
+        // Ratatouille movie information
+        Posters ratatouille = new Posters();
+        ratatouille.id = "ratatouille";
+        ratatouille.image = R.drawable.poster_ratatouille;
+        ratatouille.name = "Ratatouille";
+        ratatouille.rating = 5f;
+        ratatouille.createdBy = "Brad Bird";
+        ratatouille.story = "A rat with a passion for cooking dreams of becoming a chef in Paris.";
+        posters.add(ratatouille);
 
-        Posters japanMovie = new Posters();
-        japanMovie.id = "japanese";
-        japanMovie.image = R.drawable.poster1;
-        japanMovie.name = "Japanese Movie";
-        japanMovie.rating = 3f;
-        japanMovie.createdBy = "Juzo Itami";
-        japanMovie.story = "This is an Japanese Movie.";
-        posters.add(japanMovie);
+        // Nacho Libre movie information
+        Posters nachoLibre = new Posters();
+        nachoLibre.id = "nacho_libre";
+        nachoLibre.image = R.drawable.poster_nacho_libre;
+        nachoLibre.name = "Nacho Libre";
+        nachoLibre.rating = 5f;
+        nachoLibre.createdBy = "Jared Hess";
+        nachoLibre.story = "A monastery cook becomes a masked wrestler to help support the orphans.";
+        posters.add(nachoLibre);
 
-        Posters americanMovie = new Posters();
-        americanMovie.id = "american";
-        americanMovie.image = R.drawable.poster2;
-        americanMovie.name = "American Movie";
-        americanMovie.rating = 5f;
-        americanMovie.createdBy = "Tim Burton";
-        americanMovie.story = "This is an American Movie.";
-        posters.add(americanMovie);
+        // Tenet movie information
+        Posters tenet = new Posters();
+        tenet.id = "tenet";
+        tenet.image = R.drawable.poster_tenet;
+        tenet.name = "Tenet";
+        tenet.rating = 5f;
+        tenet.createdBy = "Christopher Nolan";
+        tenet.story = "A secret agent must manipulate the flow of time to prevent a global catastrophe.";
+        posters.add(tenet);
+
+        // Fight Club movie information
+        Posters fightClub = new Posters();
+        fightClub.id = "fight_club";
+        fightClub.image = R.drawable.poster_fight_club;
+        fightClub.name = "Fight Club";
+        fightClub.rating = 5f;
+        fightClub.createdBy = "David Fincher";
+        fightClub.story = "An insomniac and a mysterious stranger create an underground fight club.";
+        posters.add(fightClub);
 
         return posters;
-
     }
 
 

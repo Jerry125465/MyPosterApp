@@ -43,8 +43,9 @@
             android:textColor="@color/colorTextSecondary"
             android:textSize="13sp"/>
 
-        <!-- Company info-->
+        <!-- Company information and personal introduction -->
         <TextView
+            android:id="@+id/textCompanyIntro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -52,6 +53,14 @@
             android:text="@string/company_intro"
             android:textColor="@color/colorTextPrimary"
             android:textSize="15sp"/>
+
+        <!-- Button to display personal introduction -->
+        <Button
+            android:id="@+id/buttonPersonalIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/personal_intro_button"/>
 
         <!--  Divider line. -->
         <View

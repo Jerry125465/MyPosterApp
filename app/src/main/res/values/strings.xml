@@ -6,14 +6,18 @@
     <string name="nav_main">Main Page</string>
     <string name="nav_favorites">Favorite List</string>
     <string name="nav_contact">Contact Us</string>
+    <string name="nav_rango">Rango Scene</string>
     <string name="title_favorites">Favorite List</string>
     <string name="title_contact">Contact Us</string>
+    <string name="title_rango">Rango Movie Scene</string>
     <string name="app_version">Version 1.0</string>
     <string name="navigation_drawer_open">Open menu</string>
     <string name="navigation_drawer_close">Close menu</string>
 
     <string name="about_us">About us</string>
     <string name="company_intro">MoviePoster is a small studio that builds simple, friendly apps for discovering films from around the world. We hand-pick posters and stories so you can quickly find, and save, your next favorite movie.</string>
+    <string name="personal_intro_button">About Me</string>
+    <string name="personal_intro">Hello! My name is Gerardo and this is my fourth year at CWU.</string>
     <string name="get_in_touch">Get in touch</string>
     <string name="contact_email">contact@movieposter.example</string>
     <string name="contact_email_hint">Tap to open your email app</string>

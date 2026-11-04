@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG_PAGE_MAIN = "page_main";
     private static final String TAG_PAGE_FAVORITES = "page_favorites";
     private static final String TAG_PAGE_CONTACT = "page_contact";
+    private static final String TAG_PAGE_RANGO = "page_rango";
 
     //drawer the side menu inside it, and the bottom bar.
     private DrawerLayout drawerLayout;
@@ -116,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.fragmentContainer, new PostersFragment(), TAG_PAGE_MAIN)
                     .add(R.id.fragmentContainer, new FavoritesFragment(), TAG_PAGE_FAVORITES)
                     .add(R.id.fragmentContainer, new ContactFragment(), TAG_PAGE_CONTACT)
+                    .add(R.id.fragmentContainer, new RangoFragment(), TAG_PAGE_RANGO)
                     .commitNow();
         } else {
             currentPageId = savedInstanceState.getInt(KEY_CURRENT_PAGE, R.id.nav_main);
@@ -149,7 +151,8 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         String visibleTag = tagForPage(pageId);
-        for (String tag : new String[]{TAG_PAGE_MAIN, TAG_PAGE_FAVORITES, TAG_PAGE_CONTACT}) {
+        for (String tag : new String[]{
+                TAG_PAGE_MAIN, TAG_PAGE_FAVORITES, TAG_PAGE_CONTACT, TAG_PAGE_RANGO}) {
             Fragment page = fragmentManager.findFragmentByTag(tag);
             if (page == null) {
                 continue;
@@ -179,6 +182,8 @@ public class MainActivity extends AppCompatActivity {
             return R.string.title_favorites;
         } else if (pageId == R.id.nav_contact) {
             return R.string.title_contact;
+        } else if (pageId == R.id.nav_rango) {
+            return R.string.title_rango;
         }
         return R.string.posters;
     }
@@ -189,6 +194,8 @@ public class MainActivity extends AppCompatActivity {
             return TAG_PAGE_FAVORITES;
         } else if (pageId == R.id.nav_contact) {
             return TAG_PAGE_CONTACT;
+        } else if (pageId == R.id.nav_rango) {
+            return TAG_PAGE_RANGO;
         }
         return TAG_PAGE_MAIN;
     }
